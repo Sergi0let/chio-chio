@@ -1,757 +1,313 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="en">
   <head>
-    <title>exported project</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-
-    <style data-tag="reset-style-sheet">
-      html {
-        line-height: 1.15;
-      }
-      body {
-        margin: 0;
-      }
-      * {
-        box-sizing: border-box;
-        border-width: 0;
-        border-style: solid;
-      }
-      p,
-      li,
-      ul,
-      pre,
-      div,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      figure,
-      blockquote,
-      figcaption {
-        margin: 0;
-        padding: 0;
-      }
-      button {
-        background-color: transparent;
-      }
-      button,
-      input,
-      optgroup,
-      select,
-      textarea {
-        font-family: inherit;
-        font-size: 100%;
-        line-height: 1.15;
-        margin: 0;
-      }
-      button,
-      select {
-        text-transform: none;
-      }
-      button,
-      [type='button'],
-      [type='reset'],
-      [type='submit'] {
-        -webkit-appearance: button;
-      }
-      button::-moz-focus-inner,
-      [type='button']::-moz-focus-inner,
-      [type='reset']::-moz-focus-inner,
-      [type='submit']::-moz-focus-inner {
-        border-style: none;
-        padding: 0;
-      }
-      button:-moz-focus,
-      [type='button']:-moz-focus,
-      [type='reset']:-moz-focus,
-      [type='submit']:-moz-focus {
-        outline: 1px dotted ButtonText;
-      }
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-      input {
-        padding: 2px 4px;
-      }
-      img {
-        display: block;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style: normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-default-black);
-      }
-    </style>
+    <title>ChiaChia</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/iconsfont.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-      data-tag="font"
-    />
-    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
-      <link href="./homepage.css" rel="stylesheet" />
+    <div class="wrapper">
+      <div class="contacts __container">
+        <address class="contacts__info">
+          <a
+            href="https://www.google.com/maps/place/50.450100,30.523400"
+            class="contacts__info _icon-loc"
+          >
+            Plaça del Carme, 6, 46120 Alboraia, Valencia
+          </a>
+          <a href="tel:+34961339532" class="contacts__info _icon-call">
+            +34 961 33 95 32
+          </a>
+        </address>
+        <ul class="contacts__scls">
+          <li>
+            <a href="#" class="contacts__link _icon-inst"> Instagram </a>
+          </li>
+          <li>
+            <a href="#" class="contacts__link _icon-fbk"> Facebook </a>
+          </li>
+          <li>
+            <a href="#" class="contacts__link _icon-tdr"> Tripavisor </a>
+          </li>
+        </ul>
+      </div>
+      <header class="header">
+        <div class="header__container">
+          <a href="/" class="header__logo _icon-logo"></a>
+          <nav>
+            <ul class="header__list">
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Special</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Visit Us</a></li>
+            </ul>
+          </nav>
+          <button class="btn">BOOK A TABLE</button>
+          <div class="header__menu-btn" style="display: none"></div>
+        </div>
+      </header>
+      <main>
+        <section class="main">
+          <div class="main__wrapper">
+            <div class="main__content">
+              <h1 class="main__title">
+                Sabores auténticos que te transportan a otro lugar
+              </h1>
+              <div class="main__layout">
+                <p>Monday to Friday: 5pm - 11pm</p>
+                <p>Saturday: 10am - 11pm</p>
+                <p>Sunday: closed</p>
+              </div>
 
-      <div class="homepage-container">
-        <div class="homepage-homepage">
-          <div class="homepage-frame10">
-            <span class="homepage-text 20pxReg">
-              <span>Monday to Friday: 5pm - 11pm</span>
-            </span>
-            <span class="homepage-text002 20pxReg">
-              <span>Saturday: 10am - 11pm</span>
-            </span>
-            <span class="homepage-text004 20pxReg">
-              <span>Sunday: closed</span>
-            </span>
-          </div>
-          <div style="display: flex; position: absolute; bottom: 0">
-            <div class="homepage-frame5">
-              <span class="homepage-text006 20pxBold">
-                <span>BOOK A TABLE</span>
-              </span>
-            </div>
-            <div class="homepage-frame6">
-              <span class="homepage-text008 20pxBold">
-                <span>VIEW MENU</span>
-              </span>
-            </div>
-          </div>
-          <div class="homepage-frame116">
-            <span class="homepage-text010 H3">
-              <span>
-                Jueves - Día del Niño, 50% de descuento en todo el menú infantil
-              </span>
-            </span>
-            <span class="homepage-text012 20pxReg">
-              <span>
-                ¡Celebra los jueves con una oferta especial para los más
-                pequeños! Ahora, todos los jueves, ofrecemos un 50% de descuento
-                en todo el menú para niños.
-              </span>
-            </span>
-            <span class="homepage-text014 24pxReg">
-              <span>22 de abril de 2013</span>
-            </span>
-          </div>
-          <div class="homepage-frame115">
-            <span class="homepage-text016 H3">
-              <span>
-                ¡Fiesta con música en vivo en el restaurante ChiaChio!
-              </span>
-            </span>
-            <span class="homepage-text018 20pxReg">
-              <span>
-                ¡Únete a la fiesta en el restaurante ChiaChio! Este fin de
-                semana, ven y disfruta de una noche emocionante con música en
-                vivo mientras degustas nuestra deliciosa comida y bebidas.
-              </span>
-            </span>
-            <span class="homepage-text020 24pxReg">
-              <span>26 de abril de 2013</span>
-            </span>
-          </div>
-          <img
-            src="public/playground_assets/rectangle31816-0h17-1400h.png"
-            alt="Rectangle31816"
-            class="homepage-rectangle3"
-          />
-          <div class="homepage-frame32">
-            <img
-              src="public/playground_assets/line11817-o4y.svg"
-              alt="Line11817"
-              class="homepage-line1"
-            />
-            <div class="homepage-frame31">
-              <div class="homepage-frame28">
-                <div class="homepage-frame21">
-                  <img
-                    src="public/playground_assets/istockphoto1849494651024x1024transformed11817-lp92-400h.png"
-                    alt="istockphoto1849494651024x1024transformed11817"
-                    class="homepage-istockphoto1849494651024x1024transformed1"
-                  />
-                  <div class="homepage-group8">
-                    <div class="homepage-frame16">
-                      <span class="homepage-text022 24pxReg">
-                        <span>ENTRANTES</span>
-                      </span>
-                      <img
-                        src="public/playground_assets/arrow11818-kkcs.svg"
-                        alt="Arrow11818"
-                        class="homepage-arrow1"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="homepage-frame22">
-                  <img
-                    src="public/playground_assets/istockphoto11822803761024x1024transformed11818-dhni-400h.png"
-                    alt="istockphoto11822803761024x1024transformed11818"
-                    class="homepage-istockphoto11822803761024x1024transformed1"
-                  />
-                  <div class="homepage-group6">
-                    <span class="homepage-text024 24pxReg">
-                      <span>BOCATAS</span>
-                    </span>
-                    <img
-                      src="public/playground_assets/arrow11818-47le.svg"
-                      alt="Arrow11818"
-                      class="homepage-arrow11"
-                    />
-                  </div>
-                </div>
-                <div class="homepage-frame23">
-                  <img
-                    src="public/playground_assets/istockphoto11710099811024x1024transformed11818-8df9-400h.png"
-                    alt="istockphoto11710099811024x1024transformed11818"
-                    class="homepage-istockphoto11710099811024x1024transformed1"
-                  />
-                  <div class="homepage-group7">
-                    <span class="homepage-text026 24pxReg">
-                      <span>PLATOS COMBINADOS</span>
-                    </span>
-                    <img
-                      src="public/playground_assets/arrow11819-009i.svg"
-                      alt="Arrow11819"
-                      class="homepage-arrow12"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="homepage-frame29">
-                <div class="homepage-frame26">
-                  <img
-                    src="public/playground_assets/istockphoto10118572621024x1024transformed11819-fpl-400h.png"
-                    alt="istockphoto10118572621024x1024transformed11819"
-                    class="homepage-istockphoto10118572621024x1024transformed1"
-                  />
-                  <div class="homepage-group3">
-                    <span class="homepage-text028 24pxReg">
-                      <span>ENSALADAS</span>
-                    </span>
-                    <img
-                      src="public/playground_assets/arrow11819-03fv.svg"
-                      alt="Arrow11819"
-                      class="homepage-arrow13"
-                    />
-                  </div>
-                </div>
-                <div class="homepage-frame25">
-                  <img
-                    src="public/playground_assets/istockphoto6196372541024x1024transformed11820-m5kr-400h.png"
-                    alt="istockphoto6196372541024x1024transformed11820"
-                    class="homepage-istockphoto6196372541024x1024transformed1"
-                  />
-                  <div class="homepage-group4">
-                    <span class="homepage-text030 24pxReg">
-                      <span>SANDWICHES</span>
-                    </span>
-                    <img
-                      src="public/playground_assets/arrow31820-oub.svg"
-                      alt="Arrow31820"
-                      class="homepage-arrow3"
-                    />
-                  </div>
-                </div>
-                <div class="homepage-frame24">
-                  <img
-                    src="public/playground_assets/istockphoto13986306141024x1024transformed11820-t5tv-400h.png"
-                    alt="istockphoto13986306141024x1024transformed11820"
-                    class="homepage-istockphoto13986306141024x1024transformed1"
-                  />
-                  <div class="homepage-group5">
-                    <span class="homepage-text032 24pxReg">
-                      <span>HAMBURGUESAS</span>
-                    </span>
-                    <img
-                      src="public/playground_assets/arrow21821-150p.svg"
-                      alt="Arrow21821"
-                      class="homepage-arrow2"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="homepage-frame30">
-                <div class="homepage-frame20">
-                  <img
-                    src="public/playground_assets/istockphoto6148730481024x1024transformed11821-f3jk-400h.png"
-                    alt="istockphoto6148730481024x1024transformed11821"
-                    class="homepage-istockphoto6148730481024x1024transformed1"
-                  />
-                  <div class="homepage-group1">
-                    <div class="homepage-frame18">
-                      <span class="homepage-text034 24pxReg">
-                        <span>ARROCES POR ENCARGO</span>
-                      </span>
-                      <img
-                        src="public/playground_assets/arrow11821-y79n.svg"
-                        alt="Arrow11821"
-                        class="homepage-arrow14"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="homepage-frame19">
-                  <img
-                    src="public/playground_assets/istockphoto11733771171024x1024transformed11822-i0aa-400h.png"
-                    alt="istockphoto11733771171024x1024transformed11822"
-                    class="homepage-istockphoto11733771171024x1024transformed1"
-                  />
-                  <div class="homepage-group2">
-                    <span class="homepage-text036 24pxReg">
-                      <span>PLATOS INFANTILES</span>
-                    </span>
-                    <img
-                      src="public/playground_assets/arrow41822-2n7.svg"
-                      alt="Arrow41822"
-                      class="homepage-arrow4"
-                    />
-                  </div>
-                </div>
-                <div class="homepage-group9">
-                  <div class="homepage-frame27">
-                    <span class="homepage-text038 24pxReg">
-                      <span>
-                        Haga clic en el botón de abajo para conocer nuestro menú
-                        completo de ChiaChio
-                      </span>
-                    </span>
-                    <div class="homepage-frame61">
-                      <span class="homepage-text040 20pxBold">
-                        <span>VIEW MENU</span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img
-              src="public/playground_assets/line41823-tbgg.svg"
-              alt="Line41823"
-              class="homepage-line4"
-            />
-          </div>
-          <div class="homepage-frame38">
-            <span class="homepage-text042 20pxReg"><span>Subchef</span></span>
-            <span class="homepage-text044"><span>Manuel Martinez</span></span>
-          </div>
-          <div class="homepage-frame39">
-            <span class="homepage-text046 20pxReg"><span>Jefe</span></span>
-            <span class="homepage-text048"><span>Francisco Perez</span></span>
-          </div>
-          <img
-            src="public/playground_assets/line51823-elxr.svg"
-            alt="Line51823"
-            class="homepage-line5"
-          />
-          <img
-            src="public/playground_assets/line61823-dxs9.svg"
-            alt="Line61823"
-            class="homepage-line6"
-          />
-          <img
-            src="public/playground_assets/line71824-5m73.svg"
-            alt="Line71824"
-            class="homepage-line7"
-          />
-          <img
-            src="public/playground_assets/image321824-5aph-1000w.png"
-            alt="IMAGE321824"
-            class="homepage-image32"
-          />
-          <span class="homepage-text050 H2">
-            <span>Conozca a nuestro equipo de profesionales de ChiaChio</span>
-          </span>
-          <span class="homepage-text052 H4"><span>1 of 4</span></span>
-          <span class="homepage-text054 H4"><span>1 of 4</span></span>
-          <div class="homepage-frame114">
-            <span class="homepage-text056 H2"><span>Visit us</span></span>
-            <div class="homepage-frame7">
-              <div class="homepage-frame4">
-                <img
-                  src="public/playground_assets/iconsaxlinearlocation1824-zh1n.svg"
-                  alt="IconsaxLinearlocation1824"
-                  class="homepage-iconsax-linearlocation"
-                />
-                <span class="homepage-text058 20pxReg">
-                  <span>Plaça del Carme, 6, 46120 Alboraia, Valencia</span>
-                </span>
-              </div>
               <div>
-                <img
-                  src="public/playground_assets/iconsaxlinearcall1825-ok1u.svg"
-                  alt="IconsaxLinearcall1825"
-                  class="homepage-iconsax-linearcall"
-                />
-                <span class="homepage-text060 20pxReg">
-                  <span>+34 961 33 95 32</span>
-                </span>
+                <button class="btn">BOOK A TABLE</button>
+                <button class="btn btn_opacity">VIEW MENU</button>
               </div>
-            </div>
-            <div class="homepage-frame101">
-              <span class="homepage-text062 20pxReg">
-                <span>Monday to Friday: 5pm - 11pm</span>
-              </span>
-              <span class="homepage-text064 20pxReg">
-                <span>Saturday: 10am - 11pm</span>
-              </span>
-              <span class="homepage-text066 20pxReg">
-                <span>Sunday: closed</span>
-              </span>
-            </div>
           </div>
-          <div class="homepage-frame611">
-            <div class="homepage-frame62">
-              <span class="homepage-text068 20pxBold">
-                <span>SHOW ON MAP</span>
-              </span>
-            </div>
+          <figure>
+            <img src="./img/main/main.jpg" alt="dish">
+          </figure>
+        </section>
+
+        <section class="features">
+          <div class="features__wrapper">
+            <article class="features__block">
+              <figure>
+                <img src="./img/features/features1.jpg" alt="visit layout" />
+                <!-- <img src="./img/visit/visit1.jpg" alt="visit layout" /> -->
+                <!-- <img
+                src="https://wallpapershome.ru/images/pages/pic_v/21485.jpg"
+                alt="visit layout"
+              /> -->
+                <!-- <img
+                src="https://img4.goodfon.ru/wallpaper/nbig/1/7c/kartinka-loshadi-liubov-serdechki.jpg"
+                alt=""
+              /> -->
+              </figure>
+              <div class="features__content">
+                <h3>
+                  Jueves - Día del Niño, 50% de descuento en todo el menú
+                  infantil
+                </h3>
+                <p class="features__text">
+                  En ChiaChio, encontrarás una gran variedad de platos
+                  tradicionales españoles, como la paella, el gazpacho, el pulpo
+                  a la gallega y mucho más. También ofrecemos una amplia
+                  selección de vinos españoles, cuidadosamente seleccionados
+                  para complementar perfectamente cada plato.
+                </p>
+                <time datetime="2013-04-22">22 de abril de 2013</time>
+              </div>
+            </article>
+            <article class="features__block reverse">
+              <figure>
+                <img src="./img/features/features2.jpg" alt="visit layout" />
+                <!-- <img src="./img/visit/visit1.jpg" alt="visit layout" /> -->
+                <!-- <img
+                src="https://wallpapershome.ru/images/pages/pic_v/21485.jpg"
+                alt="visit layout"
+              /> -->
+                <!-- <img
+                  src="https://img4.goodfon.ru/wallpaper/nbig/1/7c/kartinka-loshadi-liubov-serdechki.jpg"
+                  alt=""
+                /> -->
+              </figure>
+              <div class="features__content reverse">
+                <h3>
+                  Jueves - Día del Niño, 50% de descuento en todo el menú
+                  infantil
+                </h3>
+                <p class="features__text">
+                  ¡Únete a la fiesta en el restaurante ChiaChio! Este fin de
+                  semana, ven y disfruta de una noche emocionante con música en
+                  vivo mientras degustas nuestra deliciosa comida y bebidas.
+                </p>
+                <time datetime="2013-04-26">26 de abril de 2013</time>
+              </div>
+            </article>
           </div>
-          <img
-            src="public/playground_assets/istockphoto11366380471024x1024transformed11826-1rul-500w.png"
-            alt="istockphoto11366380471024x1024transformed11826"
-            class="homepage-istockphoto11366380471024x1024transformed1"
-          />
-          <img
-            src="public/playground_assets/istockphoto14190766641024x1024transformed11826-v9y8-500w.png"
-            alt="istockphoto14190766641024x1024transformed11826"
-            class="homepage-istockphoto14190766641024x1024transformed1"
-          />
-          <img
-            src="public/playground_assets/iconsaxlineararrowright1826-sun.svg"
-            alt="IconsaxLineararrowright1826"
-            class="homepage-iconsax-lineararrowright"
-          />
-          <img
-            src="public/playground_assets/iconsaxlineararrowright1919-jlrm.svg"
-            alt="IconsaxLineararrowright1919"
-            class="homepage-iconsax-lineararrowright1"
-          />
-          <img
-            src="public/playground_assets/iconsaxlineararrowleft1826-guxj.svg"
-            alt="IconsaxLineararrowleft1826"
-            class="homepage-iconsax-lineararrowleft"
-          />
-          <img
-            src="public/playground_assets/iconsaxlineararrowleft1920-gzje.svg"
-            alt="IconsaxLineararrowleft1920"
-            class="homepage-iconsax-lineararrowleft1"
-          />
-          <span class="homepage-text070 H2">
-            <span>Esto es lo que dicen los clientes sobre nosotros</span>
-          </span>
-          <div class="homepage-frame118">
-            <div>
-              <img
-                src="public/playground_assets/star11829-y61m.svg"
-                alt="Star11829"
-                class="homepage-star1"
-              />
-              <img
-                src="public/playground_assets/star21829-esld.svg"
-                alt="Star21829"
-                class="homepage-star2"
-              />
-              <img
-                src="public/playground_assets/star31829-sbof.svg"
-                alt="Star31829"
-                class="homepage-star3"
-              />
-              <img
-                src="public/playground_assets/star41829-x7n.svg"
-                alt="Star41829"
-                class="homepage-star4"
-              />
-              <img
-                src="public/playground_assets/star51829-u1vv.svg"
-                alt="Star51829"
-                class="homepage-star5"
-              />
-            </div>
-            <span class="homepage-text072 24pxReg">
-              <span>
+        </section>
+
+        <section class="about">
+          <div class="about__wrapper">
+            <figure>
+              <img src="./img/features/features3.jpg" alt="visit layout" />
+              <!-- <img src="./img/visit/visit1.jpg" alt="visit layout" /> -->
+              <!-- <img
+                src="https://wallpapershome.ru/images/pages/pic_v/21485.jpg"
+                alt="visit layout"
+              /> -->
+              <!-- <img
+                src="https://img4.goodfon.ru/wallpaper/nbig/1/7c/kartinka-loshadi-liubov-serdechki.jpg"
+                alt=""
+              /> -->
+            </figure>
+            <article class="about__content">
+              <h2 class="about__title">About ChiaChio</h2>
+              <p class="about__text">
+                En ChiaChio, encontrarás una gran variedad de platos
+                tradicionales españoles, como la paella, el gazpacho, el pulpo a
+                la gallega y mucho más. También ofrecemos una amplia selección
+                de vinos españoles, cuidadosamente seleccionados para
+                complementar perfectamente cada plato.
+              </p>
+              <p class="about__text">
+                Así que si estás buscando una experiencia gastronómica auténtica
+                y deliciosa, ¡ven a ChiaChio! Estamos seguros de que no te
+                arrepentirás. ¡Te esperamos con los brazos abiertos!
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="team">
+          <div class="team__container">
+            <h2>Conozca a nuestro equipo de profesionales de ChiaChio</h2>
+            <ul>
+              <li>
+                <figure>
+                  <img src="./img/team/team1.jpg" alt="visit layout" />
+                </figure>
+                <p class="team__position">Jefe</p>
+                <p class="team__name">Francisco Perez</p>
+              </li>
+              <li>
+                <figure>
+                  <img src="./img/team/team2.jpg" alt="visit layout" />
+                </figure>
+                <p class="team__position">Subchef</p>
+                <p class="team__name">Manuel Martinez</p>
+              </li>
+            </ul>
+
+            <button class="team__btn-prev">
+              <img src="./img/icons/arrowright.svg" alt="button prev comment" />
+            </button>
+            <button class="team__btn-next">
+              <img src="./img/icons/arrowright.svg" alt="button next comment" />
+            </button>
+
+            <div class="team__count">1 of 4</div>
+          </div>
+        </section>
+
+        <div class="gallary">
+          <div class="gallary__wrapper">
+            <figure class="gallary__item">
+              <img src="./img/gallary/gallary1.jpg" alt="visit layout" />
+            </figure>
+            <figure class="gallary__item">
+              <img src="./img/gallary/gallary2.jpg" alt="visit layout" />
+            </figure>
+            <figure class="gallary__item gallary__item_big">
+              <img src="./img/gallary/gallary3.jpg" alt="visit layout" />
+            </figure>
+
+            <figure class="gallary__item gallary__item_big">
+              <img src="./img/gallary/gallary4.jpg" alt="visit layout" />
+            </figure>
+            <figure class="gallary__item">
+              <img src="./img/gallary/gallary5.jpg" alt="visit layout" />
+            </figure>
+            <figure class="gallary__item">
+              <img src="./img/gallary/gallary6.jpg" alt="visit layout" />
+            </figure>
+          </div>
+        </div>
+
+        <section class="comments">
+          <ul class="comments__container">
+            <li>
+              <h2>Esto es lo que dicen los clientes sobre nosotros</h2>
+              <div class="comments__range">
+                <i class="_icon-star"></i>
+                <i class="_icon-star"></i>
+                <i class="_icon-star"></i>
+                <i class="_icon-star"></i>
+                <i class="_icon-star"></i>
+              </div>
+              <p class="comments__text">
                 Best tapas in town At this moment by far the best tapas in town!
                 I have ordered here before during the lockdown and now I eat
                 here in the restaurant itself for the first time. It is just
                 super tasty. Quality is excellent! Staff is friendly, some speak
                 English, no problem for us, but what is often the case in tapas
                 restaurants that you have a well-filled wallet to take along.
-              </span>
-            </span>
-            <div class="homepage-frame117">
-              <span class="homepage-text074">
-                <span>Jasper van der Kamp</span>
-              </span>
-              <span class="homepage-text076 20pxReg">
-                <span>Tripadwisor</span>
-              </span>
-            </div>
-          </div>
-          <div class="homepage-group17">
-            <img
-              src="public/playground_assets/image411832-6h8t-600h.png"
-              alt="IMAGE411832"
-              class="homepage-image41"
-            />
-            <div class="homepage-frame51">
-              <img
-                src="public/playground_assets/image4ppvpuri8ltransformed11833-fyg-300h.png"
-                alt="IMAGE4ppVPuRi8ltransformed11833"
-                class="homepage-image4pp--pu-ri8ltransformed1"
-              />
-              <img
-                src="public/playground_assets/image511833-8syb-300h.png"
-                alt="IMAGE511833"
-                class="homepage-image51"
-              />
-            </div>
-            <div>
-              <img
-                src="public/playground_assets/image2w5qoznaxutransformed11833-r4kk-300h.png"
-                alt="IMAGE2W5QoznaxUtransformed11833"
-                class="homepage-image2w-qoznax-utransformed1"
-              />
-              <img
-                src="public/playground_assets/image421833-zdv-300h.png"
-                alt="IMAGE421833"
-                class="homepage-image42"
-              />
-            </div>
-            <img
-              src="public/playground_assets/image3n4coekxfxtransformed11833-l44w-600h.png"
-              alt="IMAGE3N4coEkxFXtransformed11833"
-              class="homepage-image3n4co-ekx--xtransformed1"
-            />
-          </div>
-          <img
-            src="public/playground_assets/snazzyimage111833-upq-1000w.png"
-            alt="snazzyimage111833"
-            class="homepage-snazzyimage11"
-          />
-          <img
-            src="public/playground_assets/rectangle221833-h8ej-200h.png"
-            alt="Rectangle221833"
-            class="homepage-rectangle22"
-          />
-          <span class="homepage-text078 20pxReg">
-            <span>© 2023 ChiaChio. All rights reserved.</span>
-          </span>
-          <img
-            src="public/playground_assets/line91833-b3x.svg"
-            alt="Line91833"
-            class="homepage-line9"
-          />
-          <img
-            src="public/playground_assets/line81834-g2g.svg"
-            alt="Line81834"
-            class="homepage-line8"
-          />
-          <div class="homepage-frame33">
-            <span class="homepage-text080"><span>About ChiaChio</span></span>
-            <span class="homepage-text082 24pxReg">
-              <span>
-                En ChiaChio, encontrarás una gran variedad de platos
-                tradicionales españoles, como la paella, el gazpacho, el pulpo a
-                la gallega y mucho más. También ofrecemos una amplia selección
-                de vinos españoles, cuidadosamente seleccionados para
-                complementar perfectamente cada plato.
-              </span>
-            </span>
-            <span class="homepage-text084 24pxReg">
-              <span>
-                Así que si estás buscando una experiencia gastronómica auténtica
-                y deliciosa, ¡ven a ChiaChio! Estamos seguros de que no te
-                arrepentirás. ¡Te esperamos con los brazos abiertos!
-              </span>
-            </span>
-          </div>
-          <div class="homepage-group25">
-            <div class="homepage-rectangle1">
-              <img
-                src="public/playground_assets/rectangle1i183-g4ok-200h.png"
-                alt="Rectangle1I183"
-                class="homepage-rectangle11"
-              />
-            </div>
-            <div class="homepage-frame71">
-              <div class="homepage-frame41">
+              </p>
+              <p class="comments__name">Jasper van der Kamp</p>
+              <p class="comments__resource">Tripadwisor</p>
+
+              <div class="comments__count">1 of 4</div>
+
+              <button class="comments__btn-prev">
                 <img
-                  src="public/playground_assets/iconsaxlinearlocationi183-ak8g.svg"
-                  alt="IconsaxLinearlocationI183"
-                  class="homepage-iconsax-linearlocation1"
+                  src="./img/icons/arrowright.svg"
+                  alt="button prev comment"
                 />
-                <span class="homepage-text086 Body">
-                  <span>Plaça del Carme, 6, 46120 Alboraia, Valencia</span>
-                </span>
-              </div>
-              <div class="homepage-frame52">
+              </button>
+              <button class="comments__btn-next">
                 <img
-                  src="public/playground_assets/iconsaxlinearcalli183-p2ve.svg"
-                  alt="IconsaxLinearcallI183"
-                  class="homepage-iconsax-linearcall1"
+                  src="./img/icons/arrowright.svg"
+                  alt="button next comment"
                 />
-                <span class="homepage-text088 Body">
-                  <span>+34 961 33 95 32</span>
-                </span>
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="visit">
+          <div class="visit__wrapper">
+            <article class="visit__content">
+              <h2 class="about__title">Visit Us</h2>
+              <address>
+                <a
+                  href="https://www.google.com/maps/place/50.450100,30.523400"
+                  class="_icon-loc"
+                >
+                  Plaça del Carme, 6, 46120 Alboraia, Valencia
+                </a>
+                <a href="tel:+34961339532" class="_icon-call">
+                  +34 961 33 95 32
+                </a>
+              </address>
+              <div class="visit__layout">
+                <p>Monday to Friday: 5pm - 11pm</p>
+                <p>Saturday: 10am - 11pm</p>
+                <p>Sunday: closed</p>
               </div>
-            </div>
-            <div class="homepage-frame113">
-              <div class="homepage-frame111">
-                <img
-                  src="public/playground_assets/iconsaxlinearinstagrami183-8zqf.svg"
-                  alt="IconsaxLinearinstagramI183"
-                  class="homepage-iconsax-linearinstagram"
-                />
-                <span class="homepage-text090 Body">
-                  <span>Instagram</span>
-                </span>
+              <div class="visit__btn">
+                <button class="btn btn_opacity">BOOK A TABLE</button>
               </div>
-              <div class="homepage-frame112">
-                <img
-                  src="public/playground_assets/iconsaxlinearfacebooki183-e97c.svg"
-                  alt="IconsaxLinearfacebookI183"
-                  class="homepage-iconsax-linearfacebook"
-                />
-                <span class="homepage-text092 Body"><span>Facebook</span></span>
-              </div>
-              <div class="homepage-frame1131">
-                <div class="homepage-tripadvisor1">
-                  <div class="homepage-group">
-                    <img
-                      src="public/playground_assets/vectori183-6yhs.svg"
-                      alt="VectorI183"
-                      class="homepage-vector"
-                    />
-                    <img
-                      src="public/playground_assets/vectori183-jzp6.svg"
-                      alt="VectorI183"
-                      class="homepage-vector1"
-                    />
-                    <img
-                      src="public/playground_assets/vectori183-4wpj.svg"
-                      alt="VectorI183"
-                      class="homepage-vector2"
-                    />
-                    <img
-                      src="public/playground_assets/vectori183-71fl.svg"
-                      alt="VectorI183"
-                      class="homepage-vector3"
-                    />
-                    <img
-                      src="public/playground_assets/vectori183-u4m.svg"
-                      alt="VectorI183"
-                      class="homepage-vector4"
-                    />
-                  </div>
-                </div>
-                <span class="homepage-text094 Body">
-                  <span>Tripavisor</span>
-                </span>
-              </div>
-            </div>
-            <img
-              src="public/playground_assets/rectangle2i183-tpjq-200h.png"
-              alt="Rectangle2I183"
-              class="homepage-rectangle2"
-            />
-            <img
-              src="public/playground_assets/chiachioi183-85e8.svg"
-              alt="ChiaChioI183"
-              class="homepage-chia-chio"
-            />
-            <div class="homepage-frame60">
-              <div class="homepage-frame54">
-                <span class="homepage-text096 20pxReg"><span>Menu</span></span>
-              </div>
-              <div class="homepage-frame601">
-                <span class="homepage-text098 20pxReg">
-                  <span>Special</span>
-                </span>
-              </div>
-              <div class="homepage-frame55">
-                <span class="homepage-text100 20pxReg"><span>About</span></span>
-              </div>
-              <div class="homepage-frame56">
-                <span class="homepage-text102 20pxReg"><span>Team</span></span>
-              </div>
-              <div class="homepage-frame58">
-                <span class="homepage-text104 20pxReg">
-                  <span>Gallery</span>
-                </span>
-              </div>
-              <div class="homepage-frame57">
-                <span class="homepage-text106 20pxReg">
-                  <span>Testimonials</span>
-                </span>
-              </div>
-              <div class="homepage-frame59">
-                <span class="homepage-text108 20pxReg">
-                  <span>Visit Us</span>
-                </span>
-              </div>
-            </div>
-            <img
-              src="public/playground_assets/line2i183-ppcg.svg"
-              alt="Line2I183"
-              class="homepage-line2"
-            />
-            <div class="homepage-frame2">
-              <span class="homepage-text110 20pxBold">
-                <span>BOOK A TABLE</span>
-              </span>
-            </div>
+            </article>
+
+            <figure>
+              <img src="./img/visit/visit1.jpg" alt="visit layout" />
+              <!-- <img
+                src="https://wallpapershome.ru/images/pages/pic_v/21485.jpg"
+                alt="visit layout"
+              /> -->
+              <!-- <img
+                src="https://img4.goodfon.ru/wallpaper/nbig/1/7c/kartinka-loshadi-liubov-serdechki.jpg"
+                alt=""
+              /> -->
+            </figure>
           </div>
-          <img
-            src="public/playground_assets/istockphoto14502701791024x1024transformed11834-yjkg-1000w.png"
-            alt="istockphoto14502701791024x1024transformed11834"
-            class="homepage-istockphoto14502701791024x1024transformed1"
-          />
-          <img
-            src="public/playground_assets/istockphoto5326869491024x1024transformed11834-3cv8-1000w.png"
-            alt="istockphoto5326869491024x1024transformed11834"
-            class="homepage-istockphoto5326869491024x1024transformed1"
-          />
-          <img
-            src="public/playground_assets/istockphoto13281902741024x1024transformed11834-kw4p-1000w.png"
-            alt="istockphoto13281902741024x1024transformed11834"
-            class="homepage-istockphoto13281902741024x1024transformed1"
-          />
-          <img
-            src="public/playground_assets/line101834-gxt.svg"
-            alt="Line101834"
-            class="homepage-line10"
-          />
-          <span class="homepage-text112 H1">
-            <span>Sabores auténticos que te transportan a otro lugar</span>
-          </span>
-        </div>
-      </div>
+        </section>
+      </main>
+      <footer>
+        <p>© 2023 ChiaChio. All rights reserved.</p>
+      </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
