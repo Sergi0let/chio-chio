@@ -353,6 +353,14 @@ h4 {
   bottom: 0;
   width: 100%;
   height: 100%;
+  background: #1a191b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.items__link-menu div {
+  max-width: 240px;
 }
 .items__link-menu p {
   font-size: 24px;
