@@ -10,3 +10,20 @@ document.addEventListener('scroll', () => {
     main.classList.remove('sticky-top');
   }
 });
+
+const openMenu = () => {
+  const openBtn = document.querySelector('._open');
+  openBtn.addEventListener('click', () => {
+    const menu = document.querySelector('.menu');
+    menu.classList.add('open');
+  });
+};
+
+openMenu();
+
+const closeMenu = () => {
+  const menu = document.querySelector('.menu');
+  menu && menu.addEventListener('click', () => menu.classList.remove('open'));
+};
+
+closeMenu();

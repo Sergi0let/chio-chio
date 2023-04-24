@@ -52,33 +52,87 @@
               <li><a href="#">Visit Us</a></li>
             </ul>
           </nav>
-          <button class="btn">BOOK A TABLE</button>
-          <div class="header__menu-btn" style="display: none"></div>
+          <button class="header__btn btn">BOOK A TABLE</button>
+          <button class="header__menu-btn _open">
+            <img
+              src="./img/icons/hambergermenu.svg"
+              alt="button to open menu"
+            />
+          </button>
+        </div>
+        <a href="tel:+34961339532" class="header__call"> +34 961 33 95 32 </a>
+
+        <div class="menu">
+          <div class="menu__header">
+            <a href="/" class="header__logo _icon-logo"></a>
+            <button class="header__menu-btn _close">
+              <img src="./img/icons/close.svg" alt="button to close menu" />
+            </button>
+          </div>
+          <ul class="menu__anchors">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Special</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#visit">Visit Us</a></li>
+          </ul>
+
+          <div class="menu__btn"><button class="btn">BOOK A TABLE</button></div>
+
+          <ul class="menu__contacts">
+            <li>
+              <a
+                href="https://www.google.com/maps/place/50.450100,30.523400"
+                class="_icon-loc"
+                >Plaça del Carme, 6, 46120 Alboraia, Valencia</a
+              >
+            </li>
+            <li>
+              <a href="tel:+34961339532" class="_icon-call">
+                +34 961 33 95 32</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/chia.chia.581" class="_icon-fbk"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="_icon-tdr"
+                href="https://www.tripadvisor.es/Restaurant_Review-g187514-d12345678-Reviews-Chia_Chia-Restaurantes_en_Valencia_Provincia_de_Valencia_Valencian_Country.html"
+              >
+                Tripavisor</a
+              >
+            </li>
+          </ul>
         </div>
       </header>
       <main>
         <section class="main">
-          <div class="main__wrapper">
-            <div class="main__content">
-              <h1>Sabores auténticos que te transportan a otro lugar</h1>
-              <div class="main__layout">
-                <p>Monday to Friday: 5pm - 11pm</p>
-                <p>Saturday: 10am - 11pm</p>
-                <p>Sunday: closed</p>
-              </div>
-
-              <div class="main__btns">
-                <button class="btn">BOOK A TABLE</button>
-                <button class="btn btn_opacity">VIEW MENU</button>
-              </div>
+          <div class="main__content">
+            <h1>Sabores auténticos que te transportan a otro lugar</h1>
+            <div class="main__layout">
+              <p>Monday to Friday: 5pm - 11pm</p>
+              <p>Saturday: 10am - 11pm</p>
+              <p>Sunday: closed</p>
             </div>
-            <figure>
-              <img src="./img/main/main.jpg" alt="dish" />
-            </figure>
+
+            <div class="main__btns">
+              <button class="btn">BOOK A TABLE</button>
+              <button class="btn btn_opacity">VIEW MENU</button>
+            </div>
           </div>
+          <figure>
+            <img src="./img/main/main.jpg" alt="dish" />
+          </figure>
         </section>
 
-        <div class="items">
+        <section class="items">
+          <h2>Por favor, familiarícese con nuestro menú</h2>
           <ul class="items__wrapper">
             <li>
               <figure>
@@ -162,7 +216,7 @@
               </div>
             </li>
           </ul>
-        </div>
+        </section>
 
         <section class="features">
           <div class="features__wrapper">
@@ -350,7 +404,7 @@
           </ul>
         </section>
 
-        <section class="visit">
+        <section class="visit" id="visit">
           <div class="visit__wrapper">
             <article class="visit__content">
               <h2 class="about__title">Visit Us</h2>
