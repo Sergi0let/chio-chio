@@ -4,7 +4,7 @@
 @import './common.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700&display=swap');
-
+@import './menu.scss';
 // container-class
 [class*='__container'] {
   margin: 0 auto;
@@ -20,6 +20,23 @@
   }
   @include desktopL {
     padding: 0 100px;
+  }
+}
+[class*='__border'] {
+  margin: 0 auto;
+  max-width: $desktopLarge;
+  width: 100%;
+  padding: 50px 20px;
+
+  @include tablet {
+    padding: 100px 40px;
+  }
+
+  @include desktop {
+    padding: 100px 80px;
+  }
+  @include desktopL {
+    padding: 100px 100px;
   }
 }
 
@@ -1129,7 +1146,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
     line-height: 150%;
   }
 }
