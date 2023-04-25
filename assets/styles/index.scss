@@ -22,17 +22,6 @@
     padding: 0 100px;
   }
 }
-// [class*='__wrapper'] {
-//   margin: 0 auto;
-//   max-width: $desktopLarge;
-//   width: 100%;
-
-//   @include tablet {
-//   }
-
-//   @include desktop {
-//   }
-// }
 
 // header sticky class add JS code
 .sticky {
@@ -397,9 +386,8 @@
 
 // items class
 .items {
+  scroll-margin-top: 112px;
   padding: 50px 0;
-  position: relative;
-  z-index: -1;
 
   h2 {
     max-width: 684px;
@@ -482,9 +470,15 @@
       max-width: 240px;
     }
     p {
-      font-size: 24px;
+      font-size: 18px;
       line-height: 150%;
       margin-bottom: 40px;
+    }
+
+    @include tablet {
+      p {
+        font-size: 24px;
+      }
     }
   }
 
@@ -540,6 +534,7 @@
 }
 
 .features {
+  scroll-margin-top: 112px;
   padding: 50px 0;
 
   &__block {
@@ -631,6 +626,7 @@
 
 // team-class
 .team {
+  scroll-margin-top: 112px;
   padding: 50px 0;
 
   h2 {
@@ -708,15 +704,9 @@
   &__btn-next {
     display: none;
     position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    transition: background 0.3s ease 0s;
+
     @include tablet {
       display: block;
-    }
-    &:hover {
-      background: #1a191b;
     }
   }
 
@@ -735,6 +725,7 @@
 }
 
 .gallary {
+  scroll-margin-top: 112px;
   padding: 50px 0;
 
   &__wrapper {
@@ -775,6 +766,7 @@
 
 // about-class
 .about {
+  scroll-margin-top: 112px;
   padding: 50px 0;
   overflow: hidden;
   figure {
@@ -838,6 +830,7 @@
 
 // comments-class
 .comments {
+  scroll-margin-top: 112px;
   padding: 50px 0;
   li {
     text-align: center;
@@ -872,8 +865,8 @@
 
   &__text,
   &__name {
-    padding-top: 24px;
-    font-size: 24px;
+    padding: 24px 20px 0;
+    font-size: 18px;
     line-height: 150%;
   }
 
@@ -884,23 +877,10 @@
 
   &__btn-prev {
     transform: rotate(180deg);
-    left: 0;
-
-    img {
-      &:hover {
-        transform: translateX(8px);
-      }
-    }
   }
 
   &__btn-next {
     right: 0;
-
-    img {
-      &:hover {
-        transform: translateX(8px);
-      }
-    }
   }
   &__btn-prev,
   &__btn-next {
