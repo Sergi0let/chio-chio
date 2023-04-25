@@ -43,13 +43,39 @@
           <a href="/" class="header__logo _icon-logo"></a>
           <nav>
             <ul class="header__list">
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Special</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Visit Us</a></li>
+              <li>
+                <a href="#menu" onclick="smoothScroll('#menu', 1000)">Menu</a>
+              </li>
+              <li>
+                <a href="#special" onclick="smoothScroll('#special', 1000)"
+                  >Special</a
+                >
+              </li>
+              <li>
+                <a href="#about" onclick="smoothScroll('#about', 1000)"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#team" onclick="smoothScroll('#team', 1000)">Team</a>
+              </li>
+              <li>
+                <a href="#gallery" onclick="smoothScroll('#gallery', 1000)"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  onclick="smoothScroll('#testimonials', 1000)"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#visitus" onclick="smoothScroll('#visitus', 1000)"
+                  >Visit Us</a
+                >
+              </li>
             </ul>
           </nav>
           <button class="header__btn btn">BOOK A TABLE</button>
@@ -70,13 +96,13 @@
             </button>
           </div>
           <ul class="menu__anchors">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Special</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#visit">Visit Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#special">Special</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#visitus">Visit Us</a></li>
           </ul>
 
           <div class="menu__btn"><button class="btn">BOOK A TABLE</button></div>
@@ -131,7 +157,7 @@
           </figure>
         </section>
 
-        <section class="items">
+        <section class="items" id="menu">
           <h2>Por favor, familiarícese con nuestro menú</h2>
           <ul class="items__wrapper">
             <li>
@@ -218,7 +244,7 @@
           </ul>
         </section>
 
-        <section class="features">
+        <section class="features" id="special">
           <article class="features__block">
             <figure>
               <img src="./img/features/features1.jpg" alt="visit layout" />
@@ -273,7 +299,7 @@
           </article>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <figure>
             <img src="./img/features/features3.jpg" alt="visit layout" />
           </figure>
@@ -294,7 +320,7 @@
           </article>
         </section>
 
-        <section class="team">
+        <section class="team" id="team">
           <h2>Conozca a nuestro equipo de profesionales de ChiaChio</h2>
           <div class="team__swiper">
             <ul>
@@ -323,113 +349,95 @@
           </div>
         </section>
 
-        <div class="gallary">
+        <div class="gallary" id="gallery">
           <div class="gallary__wrapper">
-            <figure class="gallary__item" style="grid-area: photo1">
+            <figure style="grid-area: photo1">
               <img src="./img/gallary/gallary1.jpg" alt="visit layout" />
             </figure>
-            <figure class="gallary__item" style="grid-area: photo2">
+            <figure style="grid-area: photo2">
               <img src="./img/gallary/gallary2.jpg" alt="visit layout" />
             </figure>
-            <figure
-              class="gallary__item gallary__item_big"
-              style="grid-area: photo3"
-            >
+            <figure style="grid-area: photo3">
               <img src="./img/gallary/gallary3.jpg" alt="visit layout" />
             </figure>
 
-            <figure
-              class="gallary__item gallary__item_big"
-              style="grid-area: photo4"
-            >
+            <figure style="grid-area: photo4">
               <img src="./img/gallary/gallary4.jpg" alt="visit layout" />
             </figure>
-            <figure class="gallary__item" style="grid-area: photo5">
+            <figure style="grid-area: photo5">
               <img src="./img/gallary/gallary5.jpg" alt="visit layout" />
             </figure>
-            <figure class="gallary__item" style="grid-area: photo6">
+            <figure style="grid-area: photo6">
               <img src="./img/gallary/gallary6.jpg" alt="visit layout" />
             </figure>
           </div>
         </div>
 
-        <section class="comments">
-          <ul class="comments__container">
-            <li>
-              <h2>Esto es lo que dicen los clientes sobre nosotros</h2>
-              <div class="comments__range">
-                <i class="_icon-star"></i>
-                <i class="_icon-star"></i>
-                <i class="_icon-star"></i>
-                <i class="_icon-star"></i>
-                <i class="_icon-star"></i>
-              </div>
-              <p class="comments__text">
-                Best tapas in town At this moment by far the best tapas in town!
-                I have ordered here before during the lockdown and now I eat
-                here in the restaurant itself for the first time. It is just
-                super tasty. Quality is excellent! Staff is friendly, some speak
-                English, no problem for us, but what is often the case in tapas
-                restaurants that you have a well-filled wallet to take along.
-              </p>
-              <p class="comments__name">Jasper van der Kamp</p>
-              <p class="comments__resource">Tripadwisor</p>
+        <ul class="comments" id="testimonials">
+          <li>
+            <h2>Esto es lo que dicen los clientes sobre nosotros</h2>
+            <div class="comments__range">
+              <i class="_icon-star"></i>
+              <i class="_icon-star"></i>
+              <i class="_icon-star"></i>
+              <i class="_icon-star"></i>
+              <i class="_icon-star"></i>
+            </div>
+            <p class="comments__text">
+              Best tapas in town At this moment by far the best tapas in town! I
+              have ordered here before during the lockdown and now I eat here in
+              the restaurant itself for the first time. It is just super tasty.
+              Quality is excellent! Staff is friendly, some speak English, no
+              problem for us, but what is often the case in tapas restaurants
+              that you have a well-filled wallet to take along.
+            </p>
+            <p class="comments__name">Jasper van der Kamp</p>
+            <p class="comments__resource">Tripadwisor</p>
 
-              <div class="comments__count">1 of 4</div>
-
-              <button class="comments__btn-prev">
-                <img
-                  src="./img/icons/arrowright.svg"
-                  alt="button prev comment"
-                />
-              </button>
-              <button class="comments__btn-next">
-                <img
-                  src="./img/icons/arrowright.svg"
-                  alt="button next comment"
-                />
-              </button>
-            </li>
-          </ul>
-        </section>
+            <button class="comments__btn-prev">
+              <img src="./img/icons/arrowright.svg" alt="button prev comment" />
+            </button>
+            <button class="comments__btn-next">
+              <img src="./img/icons/arrowright.svg" alt="button next comment" />
+            </button>
+          </li>
+        </ul>
 
         <section class="visit" id="visit">
-          <div class="visit__wrapper">
-            <article class="visit__content">
-              <h2 class="about__title">Visit Us</h2>
-              <address>
-                <a
-                  href="https://www.google.com/maps/place/50.450100,30.523400"
-                  class="_icon-loc"
-                >
-                  Plaça del Carme, 6, 46120 Alboraia, Valencia
-                </a>
-                <a href="tel:+34961339532" class="_icon-call">
-                  +34 961 33 95 32
-                </a>
-              </address>
-              <div class="visit__layout">
-                <p>Monday to Friday: 5pm - 11pm</p>
-                <p>Saturday: 10am - 11pm</p>
-                <p>Sunday: closed</p>
-              </div>
-              <div class="visit__btn">
-                <button class="btn btn_opacity">BOOK A TABLE</button>
-              </div>
-            </article>
+          <article class="visit__content">
+            <h2 class="about__title">Visit Us</h2>
+            <address>
+              <a
+                href="https://www.google.com/maps/place/50.450100,30.523400"
+                class="_icon-loc"
+              >
+                Plaça del Carme, 6, 46120 Alboraia, Valencia
+              </a>
+              <a href="tel:+34961339532" class="_icon-call">
+                +34 961 33 95 32
+              </a>
+            </address>
+            <div class="visit__layout">
+              <p>Monday to Friday: 5pm - 11pm</p>
+              <p>Saturday: 10am - 11pm</p>
+              <p>Sunday: closed</p>
+            </div>
+            <div class="visit__btn">
+              <button class="btn btn_opacity">BOOK A TABLE</button>
+            </div>
+          </article>
 
-            <figure>
-              <img src="./img/visit/visit1.jpg" alt="visit layout" />
-              <!-- <img
+          <figure>
+            <img src="./img/visit/visit1.jpg" alt="visit layout" />
+            <!-- <img
                 src="https://wallpapershome.ru/images/pages/pic_v/21485.jpg"
                 alt="visit layout"
               /> -->
-              <!-- <img
+            <!-- <img
                 src="https://img4.goodfon.ru/wallpaper/nbig/1/7c/kartinka-loshadi-liubov-serdechki.jpg"
                 alt=""
               /> -->
-            </figure>
-          </div>
+          </figure>
         </section>
       </main>
       <footer>
