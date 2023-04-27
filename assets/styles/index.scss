@@ -252,6 +252,7 @@
   width: 100%;
   height: 100vh;
   background: $color-default-black;
+  overflow: auto;
 
   &__header {
     display: flex;
@@ -487,12 +488,22 @@
       max-width: 240px;
     }
     p {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 150%;
       margin-bottom: 40px;
     }
 
     @include tablet {
+      p {
+        font-size: 16px;
+      }
+    }
+    @include desktop {
+      p {
+        font-size: 18px;
+      }
+    }
+    @include desktopL {
       p {
         font-size: 24px;
       }
@@ -1165,5 +1176,113 @@ footer {
 .comments,
 .visit,
 footer {
-  border-top: 1px solid #c6c6c68e;
+  border-top: 1px solid $color-stroke;
+}
+
+// ----
+
+input,
+textarea,
+select {
+  background: transparent;
+  border: 1px solid #c6c6c68e;
+  color: $color-stroke;
+  font-size: 16px;
+  padding: 0 20px;
+  font-size: 20px;
+
+  &:focus {
+    outline: none;
+    border-color: $color-default-white;
+    color: $color-default-white;
+  }
+}
+label {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+select {
+  appearance: none;
+  background: url('../../img/icons/arr-select.svg') center right 20px no-repeat;
+}
+
+textarea {
+  padding-top: 10px;
+}
+
+select option {
+  background-color: $color-default-black;
+  color: $color-default-white;
+}
+.form {
+  position: relative;
+  padding-top: 20px;
+
+  & > div {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 60px;
+    }
+    select {
+      height: 60px;
+    }
+    textarea {
+      height: 140px;
+    }
+  }
+
+  &__group {
+    & > div {
+      width: 215px;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__submit {
+    button {
+      width: 100%;
+    }
+  }
+
+  @include tablet {
+    padding-top: 32px;
+
+    & > div {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__input {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+
+      &_phone {
+        width: 70%;
+      }
+    }
+
+    &__group {
+      gap: 32px;
+      display: flex;
+    }
+
+    &__submit {
+      button {
+        width: auto;
+      }
+    }
+  }
 }

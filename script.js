@@ -73,3 +73,26 @@ const closePopup = () => {
     popup.classList.remove('open-popup');
   });
 };
+
+// -------------------------------------------------------------------
+const openBook = () => {
+  const bookBtns = document.querySelectorAll('#booking');
+  console.log(bookBtns);
+  const book = document.querySelector('.book');
+  bookBtns.forEach((bookBtn) => {
+    bookBtn.addEventListener('click', () => {
+      book.classList.add('open-booking');
+    });
+  });
+};
+openBook();
+
+const closeBook = () => {
+  const book = document.querySelector('.book');
+  const closeBtn = document.querySelector('.book__btn-close');
+  closeBtn.addEventListener('click', () => {
+    console.log('close');
+    book.classList.remove('open-booking');
+  });
+};
+closeBook();

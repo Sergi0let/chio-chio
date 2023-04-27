@@ -236,6 +236,111 @@
     }
   }
 }
+
+.book {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: $color-default-black;
+  z-index: 10;
+  margin: 0 auto;
+
+  &__block {
+    height: 100%;
+  }
+
+  &__content {
+    padding: 50px 20px;
+  }
+
+  &__text {
+    color: $color-stroke;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  figure {
+    display: none;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  h1 {
+    text-align: left;
+    padding-top: 32px;
+  }
+
+  &__btn-close {
+    background: $color-default-black;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    transition: background 0.3s ease-in-out;
+    svg {
+      path {
+        transition: stroke 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      background: $color-default-white;
+      svg {
+        path {
+          stroke: $color-default-black;
+        }
+      }
+    }
+  }
+
+  @include mobileS {
+    &__text {
+      font-size: 24px;
+    }
+  }
+
+  @include tablet {
+    &__block {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+    }
+    &__content {
+      padding: 60px;
+    }
+
+    figure {
+      display: block;
+    }
+
+    &__btn-close {
+      width: 64px;
+      height: 64px;
+    }
+    &__price {
+      font-size: 48px;
+    }
+  }
+
+  @include desktop {
+    &__content {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 78px;
+      padding-bottom: 78px;
+    }
+  }
+}
 .open-popup {
+  display: block;
+}
+
+.open-booking {
   display: block;
 }
