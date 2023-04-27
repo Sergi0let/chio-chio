@@ -7,10 +7,6 @@
     <title>ChiaChia</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/iconsfont.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <div class="wrapper">
@@ -96,7 +92,7 @@
             <li><a href="#visitus">Visit Us</a></li>
           </ul>
 
-          <div class="menu__btn">
+          <div class="menu__btn" onclick="closeMenu();">
             <button class="btn orange">BOOK A TABLE</button>
           </div>
 
@@ -142,7 +138,9 @@
 
             <div class="main__btns">
               <button class="btn orange">BOOK A TABLE</button>
-              <a href="http://127.0.0.1:5500/menu.html" class="btn opacity"
+              <a
+                href="https://sergi0let.github.io/chio-chio/menu"
+                class="btn opacity"
                 >VIEW MENU</a
               >
             </div>
@@ -400,22 +398,24 @@
 
         <section class="visit" id="visitus">
           <article class="visit__content">
-            <h2 class="about__title">Visit Us</h2>
-            <address>
-              <a
-                href="https://www.google.com/maps/place/50.450100,30.523400"
-                class="_icon-loc"
-              >
-                Plaça del Carme, 6, 46120 Alboraia, Valencia
-              </a>
-              <a href="tel:+34961339532" class="_icon-call">
-                +34 961 33 95 32
-              </a>
-            </address>
-            <div class="visit__layout">
-              <p>Monday to Friday: 5pm - 11pm</p>
-              <p>Saturday: 10am - 11pm</p>
-              <p>Sunday: closed</p>
+            <div class="visit__info">
+              <h2 class="about__title">Visit Us</h2>
+              <address>
+                <a
+                  href="https://www.google.com/maps/place/50.450100,30.523400"
+                  class="_icon-loc"
+                >
+                  Plaça del Carme, 6, 46120 Alboraia, Valencia
+                </a>
+                <a href="tel:+34961339532" class="_icon-call">
+                  +34 961 33 95 32
+                </a>
+              </address>
+              <div class="visit__layout">
+                <p>Monday to Friday: 5pm - 11pm</p>
+                <p>Saturday: 10am - 11pm</p>
+                <p>Sunday: closed</p>
+              </div>
             </div>
             <div class="visit__btn">
               <button class="btn opacity">BOOK A TABLE</button>

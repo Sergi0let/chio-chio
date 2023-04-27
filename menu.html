@@ -61,7 +61,12 @@
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#visitus">Visit Us</a></li>
           </ul>
-
+          <button class="header__menu-btn _open">
+            <img
+              src="./img/icons/hambergermenu.svg"
+              alt="button to open menu"
+            />
+          </button>
           <div class="menu__btn">
             <button class="btn orange">BOOK A TABLE</button>
           </div>
@@ -111,7 +116,7 @@
         <section class="dishes">
           <div class="dishes__border">
             <h2>ENTRANTES / OUR STARTER</h2>
-            <ul>
+            <ul onclick="takeDataDish()">
               <li class="dish">
                 <figure>
                   <img
@@ -121,7 +126,7 @@
                 </figure>
                 <div class="dish__content">
                   <div>
-                    <h4>Rabo de cerdo</h4>
+                    <h4 class="dish__name">Rabo de cerdo</h4>
                     <p class="dish__descr">Fried pork tail</p>
                   </div>
                   <p class="dish__price">7.00€</p>
@@ -263,7 +268,7 @@
         <section class="dishes">
           <div class="dishes__border">
             <h2>NUESTROS BOCATAS / OUR SPACIAL SANDWICHES</h2>
-            <ul>
+            <ul class="menu-list">
               <li class="dish">
                 <figure>
                   <img src="img/menu/menu10.jpg" alt="dish" />
@@ -327,6 +332,98 @@
             </ul>
           </div>
         </section>
+
+        <div class="view-dish">
+          <div class="view-dish__block">
+            <div class="view-dish__content">
+              <div>
+                <h1>Almussafes: Sobrasada, Queso Fundido y Cebolla Frita</h1>
+                <h4>
+                  Sobrasada (Paprika-Spiced, Cured Sausage), Melted Cheese and
+                  Fried Onion Sandwich
+                </h4>
+              </div>
+              <p class="view-dish__price">6.00€</p>
+            </div>
+            <figure>
+              <img
+                class="view-dish__img"
+                src="img/menu/menu13.jpg"
+                alt="dish"
+              />
+            </figure>
+          </div>
+          <button class="view-dish__btn-close" onclick="closePopup();">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 8L25.0323 25.0323"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 25.0322L25.0323 7.99997"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="book">
+          <div class="view-dish__block">
+            <div class="view-dish__content">
+              <div>
+                <h1>Almussafes: Sobrasada, Queso Fundido y Cebolla Frita</h1>
+                <h4>
+                  Sobrasada (Paprika-Spiced, Cured Sausage), Melted Cheese and
+                  Fried Onion Sandwich
+                </h4>
+              </div>
+              <p class="view-dish__price">6.00€</p>
+            </div>
+            <figure>
+              <img
+                class="view-dish__img"
+                src="img/menu/menu13.jpg"
+                alt="dish"
+              />
+            </figure>
+          </div>
+          <button class="view-dish__btn-close" onclick="closePopup();">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 8L25.0323 25.0323"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 25.0322L25.0323 7.99997"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
       </main>
 
       <footer>

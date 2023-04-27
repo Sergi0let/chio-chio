@@ -13,8 +13,8 @@ document.addEventListener('scroll', () => {
 
 const openMenu = () => {
   const openBtn = document.querySelector('._open');
+  const menu = document.querySelector('.menu');
   openBtn.addEventListener('click', () => {
-    const menu = document.querySelector('.menu');
     menu.classList.add('open');
   });
 };
@@ -23,7 +23,7 @@ openMenu();
 
 const closeMenu = () => {
   const menu = document.querySelector('.menu');
-  menu && menu.addEventListener('click', () => menu.classList.remove('open'));
+  menu.addEventListener('click', () => menu.classList.remove('open'));
 };
 
 closeMenu();
@@ -52,3 +52,24 @@ function smoothScroll(target, duration) {
 
   requestAnimationFrame(animation);
 }
+
+const openPopup = () => {
+  const popupBtn = document.querySelectorAll('.dish');
+  const popup = document.querySelector('.view-dish');
+
+  popupBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      popup.classList.add('open-popup');
+    });
+  });
+};
+openPopup();
+
+const closePopup = () => {
+  const popup = document.querySelector('.view-dish');
+  const closeBtn = document.querySelector('.view-dish__btn-close');
+  closeBtn.addEventListener('click', () => {
+    console.log('close');
+    popup.classList.remove('open-popup');
+  });
+};
