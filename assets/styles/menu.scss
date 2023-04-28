@@ -23,8 +23,8 @@
   }
 
   @include tablet {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 40px;
   }
   @include desktop {
@@ -67,6 +67,11 @@
   overflow: hidden;
   cursor: pointer;
   min-height: 100px;
+
+  h4 {
+    transition: color 0.3s ease-in-out;
+  }
+
   &__content {
     position: relative;
     display: flex;
@@ -89,6 +94,7 @@
   }
 
   figure {
+    transition: transform 0.3s ease-in-out;
     min-width: 100%;
     min-height: 100%;
 
@@ -116,15 +122,25 @@
       font-size: 40px;
     }
   }
+
+  &:hover {
+    h4 {
+      color: $color-orange;
+      text-decoration: underline;
+    }
+    figure {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .view-dish {
   display: none;
   position: fixed;
-  overflow: auto;
+  overflow: scroll;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 100;
   background: $color-default-black;
@@ -247,7 +263,6 @@
   height: 100vh;
   z-index: 100;
   background: $color-default-black;
-  z-index: 10;
   margin: 0 auto;
 
   &__block {
@@ -262,6 +277,13 @@
     color: $color-stroke;
     font-size: 18px;
     line-height: 150%;
+  }
+
+  &__text-check {
+    color: $color-stroke;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 48px 0 48px 0;
   }
 
   figure {
@@ -334,6 +356,103 @@
       padding-right: 100px;
       padding-top: 78px;
       padding-bottom: 78px;
+    }
+  }
+}
+
+.book-success {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: $color-default-black;
+  margin: 0 auto;
+
+  figure {
+    display: none;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  &__check {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid $color-stroke;
+    color: $color-stroke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+  &__text {
+    color: $color-stroke;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 20px 0 20px 0;
+    text-align: center;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+
+  @include mobileS {
+    &__text {
+      font-size: 24px;
+    }
+  }
+
+  @include tablet {
+    &__check {
+      margin-bottom: 48px;
+    }
+    &__block {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+    }
+
+    figure {
+      display: block;
+    }
+
+    &__text {
+      margin: 48px 0 48px 0;
+    }
+
+    &__btn-close {
+      width: 64px;
+      height: 64px;
+    }
+    &__price {
+      font-size: 48px;
     }
   }
 }

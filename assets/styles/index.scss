@@ -63,6 +63,7 @@
   height: 56px; // height of header-contacts
   font-size: 16px;
   line-height: 24px;
+  background: $color-secondary-black;
 
   &__info {
     a {
@@ -147,6 +148,18 @@
     height: 72px;
 
     @include tablet {
+      height: 116px;
+    }
+  }
+
+  &__container-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+
+    @include tablet {
+      justify-content: space-between;
       height: 116px;
     }
   }
@@ -442,9 +455,32 @@
       min-width: 234px;
       height: 100%;
       position: relative;
+      cursor: pointer;
+
+      &:hover {
+        figure {
+          img {
+            transform: scale(1.05);
+          }
+        }
+
+        .items__link {
+          background: $color-orange;
+        }
+      }
+
+      a {
+        padding: 8px 16px;
+        font-size: 16px;
+      }
 
       @include mobileM {
         min-width: 300px;
+
+        a {
+          padding: 16px 32px;
+          font-size: inherit;
+        }
       }
     }
   }
@@ -463,12 +499,6 @@
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-
-    &:hover {
-      img {
-        transform: scale(1.02);
-      }
-    }
   }
 
   &__link-menu {
@@ -484,23 +514,23 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    div {
-      max-width: 240px;
-    }
+
     p {
+      padding: 0 20px;
       font-size: 14px;
       line-height: 150%;
-      margin-bottom: 40px;
+      margin-bottom: 28px;
     }
 
     @include tablet {
       p {
-        font-size: 16px;
+        font-size: 18px;
+        margin-bottom: 40px;
       }
     }
     @include desktop {
       p {
-        font-size: 18px;
+        font-size: 21px;
       }
     }
     @include desktopL {
@@ -530,10 +560,6 @@
 
     i {
       display: none;
-    }
-
-    &:hover {
-      background: $color-orange;
     }
 
     @include tablet {
@@ -619,6 +645,9 @@
       padding-top: 0;
       padding-left: 20px;
       padding-right: 20px;
+      time {
+        font-size: 24px;
+      }
     }
   }
 
@@ -859,7 +888,7 @@
 // comments-class
 .comments {
   scroll-margin-top: 112px;
-  padding: 50px 0;
+  padding: 50px 20px;
   li {
     text-align: center;
     position: relative;
@@ -893,7 +922,7 @@
 
   &__text,
   &__name {
-    padding: 24px 20px 0;
+    padding-top: 24px;
     font-size: 18px;
     line-height: 150%;
   }
@@ -1284,5 +1313,25 @@ select option {
         width: auto;
       }
     }
+  }
+}
+
+.form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+
+  button {
+    width: 240px;
   }
 }

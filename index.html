@@ -440,11 +440,12 @@
               /> -->
           </figure>
         </section>
+
         <div class="book">
           <div class="book__block">
             <div class="book__content">
               <div>
-                <h2>Book your table</h2>
+                <h2 id="open-success">Book your table</h2>
                 <p class="book__text">
                   We will confirm your reservation within 24 hours
                 </p>
@@ -513,6 +514,52 @@
             </figure>
           </div>
           <button class="book__btn-close">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 8L25.0323 25.0323"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 25.0322L25.0323 7.99997"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="book-success">
+          <div class="book__block">
+            <div class="book-success__content">
+              <div class="book-success__container">
+                <div class="book-success__check _icon-check"></div>
+                <h2>¡Gracias por reservar una mesa en ChiaChio!</h2>
+                <p class="book-success__text">
+                  Nuestro administrador se pondrá en contacto con usted en breve
+                  para confirmar su pedido. Mientras tanto, puede echar un
+                  vistazo a nuestro menú.
+                </p>
+                <div class="book-success__btn">
+                  <a href="menu.html" class="btn opacity">VIEW MENU</a>
+                </div>
+              </div>
+            </div>
+            <figure>
+              <img class="book__img" src="img/gallary/book.jpg" alt="dish" />
+            </figure>
+          </div>
+          <button class="book__btn-close" id="success-close">
             <svg
               width="32"
               height="32"
