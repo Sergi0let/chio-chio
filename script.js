@@ -49,7 +49,7 @@ const closePopup = () => {
 
 // -------------------------------------------------------------------
 const openBook = () => {
-  const bookBtns = document.querySelectorAll('#booking');
+  const bookBtns = document.querySelectorAll('.booking');
 
   bookBtns.forEach((bookBtn) => {
     bookBtn.addEventListener('click', () => {

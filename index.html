@@ -65,9 +65,7 @@
               </li>
             </ul>
           </nav>
-          <button class="header__btn btn orange" id="booking">
-            BOOK A TABLE
-          </button>
+          <button class="header__btn btn orange booking">BOOK A TABLE</button>
           <button class="header__menu-btn _open">
             <img
               src="./img/icons/hambergermenu.svg"
@@ -95,7 +93,7 @@
           </ul>
 
           <div class="menu__btn">
-            <button class="btn orange" id="booking">BOOK A TABLE</button>
+            <button class="btn orange booking">BOOK A TABLE</button>
           </div>
 
           <ul class="menu__contacts">
@@ -139,7 +137,7 @@
             </div>
 
             <div class="main__btns">
-              <button class="btn orange" id="booking">BOOK A TABLE</button>
+              <button class="btn orange booking">BOOK A TABLE</button>
               <a
                 href="https://sergi0let.github.io/chio-chio/menu"
                 class="btn opacity"
@@ -258,9 +256,9 @@
               /> -->
             </figure>
             <div class="features__content">
-              <h3>
+              <h2>
                 Jueves - Día del Niño, 50% de descuento en todo el menú infantil
-              </h3>
+              </h2>
               <p class="features__text">
                 En ChiaChio, encontrarás una gran variedad de platos
                 tradicionales españoles, como la paella, el gazpacho, el pulpo a
@@ -285,9 +283,9 @@
                 /> -->
             </figure>
             <div class="features__content">
-              <h3>
+              <h2>
                 Jueves - Día del Niño, 50% de descuento en todo el menú infantil
-              </h3>
+              </h2>
               <p class="features__text">
                 ¡Únete a la fiesta en el restaurante ChiaChio! Este fin de
                 semana, ven y disfruta de una noche emocionante con música en
@@ -424,7 +422,7 @@
               </div>
             </div>
             <div class="visit__btn">
-              <button class="btn opacity" id="booking">BOOK A TABLE</button>
+              <button class="btn opacity booking">BOOK A TABLE</button>
             </div>
           </article>
 
@@ -453,15 +451,7 @@
                 <form action="/submit-form" method="POST" class="form">
                   <div class="form__input">
                     <label for="name">Name*</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      min="2"
-                      max="26"
-                      required
-                    />
+                    <input type="text" id="name" name="name" required />
                   </div>
 
                   <div class="form__input form__input_phone">
@@ -473,7 +463,7 @@
                     <div class="form__input">
                       <label for="time">TIME*</label>
                       <select id="time" name="time" required>
-                        <option value="12:00">No selected</option>
+                        <option disabled selected>No selected</option>
                         <option value="12:00">12:00</option>
                         <option value="13:00">13:00</option>
                         <option value="14:00">14:00</option>
@@ -502,7 +492,7 @@
                   </div>
 
                   <div class="form__submit">
-                    <button type="submit" class="btn orange" id="booking">
+                    <button type="submit" class="btn orange booking">
                       BOOK A TABLE
                     </button>
                   </div>
