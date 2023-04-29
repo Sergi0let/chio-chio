@@ -50,6 +50,9 @@
 .sticky-top {
   padding-top: 116px;
 }
+.menu-sticky-top {
+  padding-top: 200px;
+}
 
 .menu.open {
   display: block;
@@ -165,8 +168,6 @@
   }
 
   &__btn {
-    width: 32px;
-    height: 32px;
     display: none;
     @include tablet {
       display: block;
@@ -262,6 +263,7 @@
 .menu {
   display: none;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0%;
   width: 100%;

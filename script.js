@@ -1,17 +1,31 @@
 const menu = document.querySelector('.menu');
 const popup = document.querySelector('.view-dish');
 const book = document.querySelector('.book');
+const body = document.querySelector('body');
 
 document.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
+  const header = document.querySelector('.header');
+  const headerMenu = document.querySelector('.header_menu');
   const main = document.querySelector('main');
+  const category = document.querySelector('.categories');
+  const dishes = document.querySelector('.dishes');
 
-  if (window.scrollY > 56) {
-    header.classList.add('sticky');
-    main.classList.add('sticky-top');
+  if (!headerMenu) {
+    if (window.scrollY > 56) {
+      header.classList.add('sticky');
+      main.classList.add('sticky-top');
+    } else {
+      header.classList.remove('sticky');
+      main.classList.remove('sticky-top');
+    }
   } else {
-    header.classList.remove('sticky');
-    main.classList.remove('sticky-top');
+    if (window.scrollY > 112) {
+      category.classList.add('sticky');
+      dishes.classList.add('menu-sticky-top');
+    } else {
+      category.classList.remove('sticky');
+      dishes.classList.remove('menu-sticky-top');
+    }
   }
 });
 
@@ -54,6 +68,7 @@ const openBook = () => {
   bookBtns.forEach((bookBtn) => {
     bookBtn.addEventListener('click', () => {
       book.classList.add('open-booking');
+      body.classList.add('open-booking');
     });
   });
 };
@@ -61,8 +76,10 @@ openBook();
 
 const closeBook = () => {
   const closeBtn = document.querySelector('.book__btn-close');
+
   closeBtn.addEventListener('click', () => {
     book.classList.remove('open-booking');
+    body.classList.remove('open-booking');
   });
 };
 closeBook();
@@ -71,11 +88,11 @@ closeBook();
 const openSuccess = () => {
   const successBtn = document.querySelector('#open-success');
 
-  successBtn.addEventListener('click', () => {
-    console.log('success');
-    const success = document.querySelector('.book-success');
-    success.classList.add('open-booking');
-  });
+  successBtn &&
+    successBtn.addEventListener('click', () => {
+      const success = document.querySelector('.book-success');
+      success.classList.add('open-booking');
+    });
 };
 openSuccess();
 
