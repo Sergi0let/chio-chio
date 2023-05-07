@@ -58,6 +58,11 @@
   display: block;
 }
 
+.check-category {
+  background-color: #fff !important;
+  color: #000;
+}
+
 // header-class
 .contacts {
   display: none;
@@ -505,45 +510,6 @@
     }
   }
 
-  &__link-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: $color-secondary-black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    p {
-      padding: 0 20px;
-      font-size: 14px;
-      line-height: 150%;
-      margin-bottom: 28px;
-    }
-
-    @include tablet {
-      p {
-        font-size: 18px;
-        margin-bottom: 40px;
-      }
-    }
-    @include desktop {
-      p {
-        font-size: 21px;
-      }
-    }
-    @include desktopL {
-      p {
-        font-size: 24px;
-      }
-    }
-  }
-
   &__link {
     display: block;
     height: 67px;
@@ -587,6 +553,58 @@
       span {
         font-size: 24px;
       }
+    }
+  }
+
+  &__menu {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    p {
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 150%;
+      margin-bottom: 28px;
+      max-width: 600px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @include mobileM {
+      p {
+        font-size: 21px;
+      }
+    }
+
+    @include tablet {
+      p {
+        margin-bottom: 40px;
+      }
+    }
+    @include desktop {
+      p {
+        font-size: 21px;
+      }
+    }
+    @include desktopL {
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__menu-block {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+    background: $color-secondary-black;
+
+    @include tablet {
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
   }
 }
